@@ -12,6 +12,8 @@ import wind_icon from '../Assets/wind.png'
 
 
 const WeatherApp = () =>{
+    
+    let api_key="6d1884896fc3d9c6769690be4bfe276d";
   return (
     <div className='container'>
     <div className="top-bar">
