@@ -19,7 +19,7 @@ const element=document.getElementsByClassName("cityInput")
 if(element[0].value===""){
     return 0;
 }
-let url="https://api.openweathermap.org/data/2.5/weather?q=London&appid=6d1884896fc3d9c6769690be4bfe276d";
+let url="https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}London&appid=6d1884896fc3d9c6769690be4bfe276d";
     }
   return (
     <div className='container'>
