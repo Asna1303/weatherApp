@@ -25,7 +25,9 @@ let data = await response.json();
 const humidity =document.getElementsByClassName("humidity-percent");
 const wind=document.getElementsByClassName("wind-rate");
 const temperature=document.getElementsByClassName("weather-temp");
-const location=document.getElementsByClassName("weather-location");git Infinity
+const location=document.getElementsByClassName("weather-location");
+
+humidity[0].innerHTML=data.main.humidity;
     }
   return (
     <div className='container'>
