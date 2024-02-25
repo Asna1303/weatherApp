@@ -22,6 +22,9 @@ if(element[0].value===""){
 let url="https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}London&appid=${api_key}";
 let response=await fetch(url);
 let data = await response.json();
+const humidity =document.getElementsByClassName("humidity-percent");
+const wind=document.getElementsByClassName("wind-rate");
+const temperature=document.getElementsByClassName("Weather-temp");
     }
   return (
     <div className='container'>
@@ -49,7 +52,7 @@ let data = await response.json();
         <div className="element">
             <img src={wind_icon} alt=""  className='icon'/>
             <div className="data">
-                <div className="humidity-percent">18km/hr</div>
+                <div className="wind-rate">18km/hr</div>
                 <div className="text">Wind Speed</div>
             </div>
         </div>
